@@ -1,0 +1,428 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+/*Main Color: #DFD3B6
+Accent Color: #776045*/
+
+/*========================================================
+                     HEADER  Section
+=========================================================*/
+header {
+  background: #DFD3B6;
+}
+header .brand {
+  float: left;
+}
+header .nav {
+  margin: 38px 0 48px 0;
+  float: right;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+  }
+  header .brand,
+  header .nav {
+    float: none;
+  }
+}
+
+/*==================     Brand     ======================*/
+.brand {
+  margin: 14px 0 0 0;
+  float: left;
+}
+.brand_name {
+  padding: 0 0 6px 4px;
+  display: inline-block;
+  overflow: hidden;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+/*========================================================
+                      Main Styles
+=========================================================*/
+body {
+  background: #DFD3B6;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
+  -webkit-text-size-adjust: none;
+  color: #5f5e4e;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62px;
+  line-height: 82px;
+  font-weight: 300;
+  color: #DFD3B6;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+}
+h2 em {
+  display: block;
+  font-family: 'Amatic SC', regular;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 400;
+  padding-bottom: 45px;
+}
+@media (max-width: 767px) {
+  h2 em {
+    font-size: 72px;
+    line-height: 56px;
+  }
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #776045;
+}
+p a:hover {
+  text-decoration: underline;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:active {
+  background: transparent;
+}
+a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*========================================================
+                     CONTENT  Styles
+=========================================================*/
+main {
+  display: block;
+  background: #ffffff;
+}
+/*==================    Padding and Widths    ======================*/
+.cn_main {
+  padding: 114px 0 0 0;
+}
+.cn_main__offset-1 {
+  padding: 135px 0 128px 0;
+}
+.cn_main__offset-2 {
+  padding: 141px 0 67px 0;
+}
+.cn_main__offset-3 {
+  padding: 65px 0 129px 0;
+}
+.cn_main__offset-4 {
+  padding: 116px 0 129px 0;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.boxes250 {
+  height:275px !important;
+}
+
+.same_height {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  vertical-align: middle;
+  border: 0;
+  background-color: #DFD3B6;
+  opacity: 0.4;
+}
+
+.same_height:hover {
+  opacity: 1;
+}
+
+.padding-leftMD {
+  padding-left: 50px;
+}
+
+.divParent {
+  position:relative;
+}
+
+.center {
+   width: 960px;
+  padding: 0 25px 25px 25px;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  margin: 0 0 0 -400px;
+}
+
+/*=======================================================
+                        Components
+=========================================================*/
+/*========================   Menu   ==========================*/
+.cn-menu {
+  display: inline-block;
+}
+.cn-menu:before,
+.cn-menu:after {
+  content: " ";
+  display: table;
+}
+.cn-menu:after {
+  clear: both;
+}
+.cn-menu > li {
+  position: relative;
+  float: left;
+}
+.cn-menu > li + li {
+  margin-left: 20px;
+}
+.cn-menu a {
+  display: block;
+}
+.cn-menu {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.cn-menu > li > a {
+  color: #776045;
+}
+.cn-menu > li.sfHover > a,
+.cn-menu > li > a:hover {
+  color: #FFFFFF;
+}
+.cn-menu > li.active > a {
+  color: #FFFFFF;
+}
+.cn-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 235px;
+  margin-top: 30px;
+  padding: 0;
+  z-index: 2;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cn-menu ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.cn-menu ul > li > a {
+  color: #393328;
+  padding: 0 20px;
+}
+.cn-menu ul > li.sfHover > a,
+.cn-menu ul > li > a:hover {
+  color: #ffffff;
+  background: #884646;
+}
+.cn-menu ul ul {
+  position: static;
+  top: 100%;
+  width: auto;
+  margin-top: 0;
+  padding: 0;
+  z-index: 4;
+}
+.cn-menu ul ul > li > a {
+  color: #393328;
+  padding: 0 30px;
+}
+.cn-menu ul ul > li.sfHover > a,
+.cn-menu ul ul > li > a:hover {
+  color: #ffffff;
+  background: #884646;
+}
+/*.cn-menu > li  {
+  position: relative;
+}
+.cn-menu > li  {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -6px;
+  content: '\f0d7';
+  font: 400 12px/12px 'FontAwesome';
+}*/
+
+/*========================================================
+                     FOOTER  Styles
+=========================================================*/
+footer {
+  padding: 78px 0 0 0;
+  text-align: center;
+}
+footer .socials {
+  display: inline-block;
+  overflow: hidden;
+  padding: 25px 0 25px 0;
+}
+footer .socials li {
+  float: left;
+}
+footer .socials li + li {
+  margin-left: 50px;
+}
+
+footer .socials img {
+  display: inline-block;
+  width: 94px;
+  height: 94px;
+  line-height: 94px;
+  text-align: center;
+  border-radius: 35%;
+}
+footer .socials img:hover {
+  opacity: 0.65;
+}
+footer .copyright {
+  color: #776045;
+}
+}
+footer .copyright {
+  margin-top: 70px;
+}
+
+/*========================================================
+                      Contact Form
+=========================================================*/
+/* Contact Form Basic Styles
+========================================================*/
+#contact-form {
+  position: relative;
+}
+#contact-form label {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  letter-spacing: normal;
+  margin: 0 0 8px;
+  width: 100%;
+  font: 400 18px/20px 'Open Sans', sans-serif;
+
+}
+#contact-form p {
+    color: #776045;
+}
+
+#contact-form label.message {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 0 25px;
+
+}
+#contact-form fieldset {
+  border: none;
+}
+/* Contact Form Placeholder Styles
+========================================================*/
+#contact-form ._placeholder {
+  font: 400 16px 'Open Sans', sans-serif;
+  line-height: 24px;
+  padding: 3.5px 20px 3.5px;
+  color: #DFD3B6;
+  width: 100% !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  border-radius: 0;
+  cursor: text;
+}
+#contact-form ._placeholder.focused {
+  opacity: 0.4;
+}
+/* Contact Form Input
+========================================================*/
+#contact-form input[type='text'] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 400 16px 'Open Sans', sans-serif;
+  line-height: 24px;
+  padding: 3.5px 20px 3.5px;
+  color: #DFD3B6;
+  background-color: #ffffff;
+  border: 1px solid #DFD3B6;
+  width: 100%;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  height: 31px;
+  margin: 6px 0 12px 0;
+}
+/* Contact Form Buttons
+========================================================*/
+#contact-form .btn-wr a {
+  margin-top: 10px;
+  border: 1px solid #DFD3B6;
+  display: inline-block;
+  font: 400 20px/20px 'Open Sans', sans-serif;
+  padding: 10px 24px;
+  color: #DFD3B6;
+}
+#contact-form .btn-wr a:hover {
+  color: #ffffff;
+  background: #DFD3B6;
+}
+#contact-form .btn-wr a + a {
+  margin-left: 20px;
+}
+/* Contact Form Textarea 
+========================================================*/
+#contact-form textarea {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 400 16px 'Open Sans', sans-serif;
+  line-height: 24px;
+  padding: 3.5px 20px 3.5px;
+  color: #DFD3B6;
+  background-color: #ffffff;
+  border: 1px solid #DFD3B6;
+  width: 100%;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  resize: none;
+  height: 174px;
+  overflow: auto;
+  margin: 6px 0 12px 0;
+}
